@@ -17,11 +17,11 @@ class Login_Page():
         self.driver.find_element(*self.locator.password).send_keys('secret_sauce')
         self.driver.find_element(*self.locator.submitButton).click()
 
-    def enter_user_name(self):
-        self.driver.find_element(*self.locator.userName).send_keys('standard_user')
+    def enter_user_name(self, username):
+        self.driver.find_element(*self.locator.userName).send_keys(username)
 
-    def enter_password(self):
-        self.driver.find_element(*self.locator.password).send_keys('secret_sauce')
+    def enter_password(self, password):
+        self.driver.find_element(*self.locator.password).send_keys(password)
 
     def click_on_submit_button(self):
         self.driver.find_element(*self.locator.submitButton).click()
@@ -35,3 +35,11 @@ class Login_Page():
 
     def click_on_logout_button(self):
         self.driver.find_element(*self.locator.logoutButton).click()
+
+    def verify_system_cannot_login_successfully(self):
+        textValue = self.driver.find_element(*self.locator.usernameIsRequiredText).text
+        assert textValue == 'Epic sadface: Username is required'
+
+    def verify_system_cannot_login_successfully_for_wrong_password(self):
+        textValue1 = self.driver.find_element(*self.locator.usernameIsRequiredText).text
+        assert textValue1 == 'Epic sadface: Username and password do not match any user in this service'
