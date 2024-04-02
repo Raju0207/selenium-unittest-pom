@@ -1,4 +1,4 @@
-from base_test import Base_Page
+from tests.base_test import Base_Page
 from selenium.webdriver.common.by import By
 import time
 from pages.login_page import Login_Page
