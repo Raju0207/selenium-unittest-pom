@@ -8,4 +8,4 @@ class Locators:
     swagLabsText = By.XPATH, '//div[@class ="app_logo"]'
     burgerMenu = By.ID, 'react-burger-menu-btn'
     logoutButton = By.ID, 'logout_sidebar_link'
-    usernameIsRequiredText = By.XPATH, '//h3'
+    errorText = By.XPATH, '//h3'

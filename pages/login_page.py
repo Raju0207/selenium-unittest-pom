@@ -2,6 +2,8 @@ import time
 
 from selenium.webdriver.common.by import By
 from locators.locators import Locators
+
+
 # from pages.base_page import Base_Page
 
 
@@ -36,10 +38,14 @@ class Login_Page():
     def click_on_logout_button(self):
         self.driver.find_element(*self.locator.logoutButton).click()
 
-    def verify_system_cannot_login_successfully(self):
-        textValue = self.driver.find_element(*self.locator.usernameIsRequiredText).text
-        assert textValue == 'Epic sadface: Username is required'
+    def verify_system_cannot_login_successfully_for_wrong_user_name(self):
+        textValue = self.driver.find_element(*self.locator.errorText).text
+        assert textValue == 'Epic sadface: Username and password do not match any user in this service'
 
     def verify_system_cannot_login_successfully_for_wrong_password(self):
-        textValue1 = self.driver.find_element(*self.locator.usernameIsRequiredText).text
+        textValue1 = self.driver.find_element(*self.locator.errorText).text
         assert textValue1 == 'Epic sadface: Username and password do not match any user in this service'
+
+    def verify_system_cannot_login_successfully_for_blank_data(self):
+        textValue2 = self.driver.find_element(*self.locator.errorText).text
+        assert textValue2 == 'Epic sadface: Username is required'
