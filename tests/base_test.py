@@ -15,7 +15,7 @@ class Base_Page(unittest.TestCase):
     def setUp(self):
         service_chrome = Service(executable_path=ChromeDriverManager().install())
         self.driver = webdriver.Chrome(service=service_chrome)
-        self.driver.get("https://www.saucedemo.com/")
+        self.driver.get("https://business.wind.app/")
         self.driver.maximize_window()
         self.driver.set_page_load_timeout(120)
         print("I am running first")

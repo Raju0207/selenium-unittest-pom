@@ -15,7 +15,10 @@ def get_otp_from_mail():
 
     email = mailosaur.messages.get(server_id, criteria)
 
-    otp = email.subject[-6:]
+    otp = list(email.subject[-6:])
 
     print(otp)
     return otp
+
+
+get_otp_from_mail()
