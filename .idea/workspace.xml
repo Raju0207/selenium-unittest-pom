@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c196a862-9e78-4f64-b512-a5b3bdeb046a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="c196a862-9e78-4f64-b512-a5b3bdeb046a" name="Changes" comment="basepage added and created custom click and send_keys method and usage it in login page">
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -27,9 +33,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2eSlnw3hrReJfNTR7zFkxFKpRnP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,15 +44,55 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_login.Login_Test.executor": "Run",
     "Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_user_name.executor": "Run",
     "Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_username.executor": "Run",
     "Python tests.Python tests for test_login.Login_Test.test_login.executor": "Run",
+    "Python tests.Python tests for test_login.Login_Test.test_valid_login.executor": "Run",
+    "Python.mailsour.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_login.Login_Test.test_valid_login">
+  <component name="RunManager" selected="Python.mailsour">
+    <configuration name="mailsour" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Leon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mailsour.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_login.Login_Test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Leon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login.Login_Test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_login.Login_Test.test_invalid_login_with_wrong_user_name" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Leon" />
       <option name="ENV_FILES" value="" />
@@ -77,21 +123,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_login.Login_Test.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Leon" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.Login_Test.test_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_login.Login_Test.test_valid_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Leon" />
       <option name="ENV_FILES" value="" />
@@ -109,10 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mailsour" />
         <item itemvalue="Python tests.Python tests for test_login.Login_Test.test_valid_login" />
+        <item itemvalue="Python tests.Python tests for test_login.Login_Test" />
         <item itemvalue="Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_user_name" />
         <item itemvalue="Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_username" />
-        <item itemvalue="Python tests.Python tests for test_login.Login_Test.test_login" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +164,28 @@
       <option name="presentableId" value="Default" />
       <updated>1711906043181</updated>
     </task>
+    <task id="LOCAL-00001" summary="from tests.base_test import Base_Page added in login_page">
+      <option name="closed" value="true" />
+      <created>1712077582872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712077582872</updated>
+    </task>
+    <task id="LOCAL-00002" summary="basepage added and created custom click and send_keys method and usage it in login page">
+      <option name="closed" value="true" />
+      <created>1713630692424</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713630692424</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="from tests.base_test import Base_Page added in login_page" />
+    <MESSAGE value="basepage added and created custom click and send_keys method and usage it in login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="basepage added and created custom click and send_keys method and usage it in login page" />
   </component>
 </project>
