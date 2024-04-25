@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c196a862-9e78-4f64-b512-a5b3bdeb046a" name="Changes" comment="get otp from mailsour added">
-      <change afterPath="$PROJECT_DIR$/pages/signup_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_signup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locators/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/signup_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signup_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_signup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_login.Login_Test.executor": "Run",
-    "Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_user_name.executor": "Run",
-    "Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_username.executor": "Run",
-    "Python tests.Python tests for test_login.Login_Test.test_login.executor": "Run",
-    "Python tests.Python tests for test_login.Login_Test.test_valid_login.executor": "Run",
-    "Python tests.Python tests for test_signup.SignUp_Test.test_signup.executor": "Run",
-    "Python.mailsour.executor": "Run",
-    "Python.utils.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_login.Login_Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_user_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.Login_Test.test_invalid_login_with_wrong_username.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.Login_Test.test_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.Login_Test.test_valid_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_signup.SignUp_Test.test_signup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mailsour.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;wind&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for test_signup.SignUp_Test.test_signup">
     <configuration name="mailsour" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Leon" />
@@ -200,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713977500931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="get otp from mailsour added">
+      <option name="closed" value="true" />
+      <created>1713980090026</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713980090026</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

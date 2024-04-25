@@ -27,3 +27,19 @@ class SignUp_Page(BasePage):
         for digit in range(1, 7):
             digit = int(digit)
             self.insert_data(self.locator.otp_digit(self, serial=digit), otp[digit - 1])
+
+    def set_pin(self, pin):
+        for digit in range(1, 5):
+            digit = int(digit)
+            self.insert_data(self.locator.set_pin_locator(self, serial=digit), pin[digit - 1])
+
+    def set_confirm_pin(self, pin):
+        for digit in range(1, 5):
+            digit = int(digit)
+            self.insert_data(self.locator.set_confirm_pin_locator(self, serial=digit), pin[digit - 1])
+
+    def enter_company_name(self):
+        self.insert_data(self.locator.companyName, "ABC")
+
+    def click_on_freelancer(self):
+        self.click_element(self.locator.whyYouChoose)

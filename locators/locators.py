@@ -13,3 +13,12 @@ class Locators:
     burgerMenu = By.ID, 'react-burger-menu-btn'
     logoutButton = By.ID, 'logout_sidebar_link'
     errorText = By.XPATH, '//h3'
+
+    def set_pin_locator(self, serial):
+        return By.XPATH, f'(//div[@class="pincode-input-container"])[1]/input[{serial}]'
+
+    def set_confirm_pin_locator(self, serial):
+        return By.XPATH, f'(//div[@class="pincode-input-container"])[2]/input[{serial}]'
+
+    companyName = By.ID, 'companyName'
+    whyYouChoose = By.NAME, 'question'
