@@ -8,12 +8,6 @@ class Locators:
     def otp_digit(self, serial):
         return By.XPATH, f'//div[@class="pincode-input-container"]/input[{serial}]'
 
-    submitButton = (By.ID, 'login-button')
-    swagLabsText = By.XPATH, '//div[@class ="app_logo"]'
-    burgerMenu = By.ID, 'react-burger-menu-btn'
-    logoutButton = By.ID, 'logout_sidebar_link'
-    errorText = By.XPATH, '//h3'
-
     def set_pin_locator(self, serial):
         return By.XPATH, f'(//div[@class="pincode-input-container"])[1]/input[{serial}]'
 
@@ -22,3 +16,19 @@ class Locators:
 
     companyName = By.ID, 'companyName'
     whyYouChoose = By.NAME, 'question'
+
+    login = By.XPATH, '//a[text() = "Log in"]'
+
+    settings = By.XPATH, '//span[text() = "Settings"]'
+
+    photo = By.XPATH, '//input[@type ="file"]'
+    name = By.ID, 'name'
+    save_button = By.XPATH, '//button[text() ="Save changes"]'
+
+
+
+    # submitButton = (By.ID, 'login-button')
+    # swagLabsText = By.XPATH, '//div[@class ="app_logo"]'
+    # burgerMenu = By.ID, 'react-burger-menu-btn'
+    # logoutButton = By.ID, 'logout_sidebar_link'
+    # errorText = By.XPATH, '//h3'

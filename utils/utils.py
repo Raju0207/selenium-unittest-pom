@@ -19,6 +19,3 @@ def get_otp_from_mail():
 
     print(otp)
     return otp
-
-
-get_otp_from_mail()
