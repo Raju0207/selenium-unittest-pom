@@ -21,14 +21,9 @@ class Locators:
 
     settings = By.XPATH, '//span[text() = "Settings"]'
 
-    photo = By.XPATH, '//input[@type ="file"]'
+    photo = '//input[@type ="file"]'
     name = By.ID, 'name'
-    save_button = By.XPATH, '//button[text() ="Save changes"]'
-
-
-
-    # submitButton = (By.ID, 'login-button')
-    # swagLabsText = By.XPATH, '//div[@class ="app_logo"]'
-    # burgerMenu = By.ID, 'react-burger-menu-btn'
-    # logoutButton = By.ID, 'logout_sidebar_link'
-    # errorText = By.XPATH, '//h3'
+    save_change_button = By.XPATH, '//button[text() ="Save changes"]'
+    balance_change_button = By.XPATH, '//button[text() = "Change"]'
+    currency = By.XPATH, '//section[@class="sc-hKinHC cRHiry"]/button[4]'
+    save_button = By.XPATH, '//button[text() = "Save"]'
