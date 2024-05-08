@@ -1,16 +1,17 @@
-from base_test import Base_Page
+from tests.base_test import Base_Page
 from selenium.webdriver.common.by import By
 import time
 from pages.login_page import Login_Page
+from testdata.data import Data
 
 
 class Login_Test(Base_Page):
 
     def test_login(self):
         lp = Login_Page(self.driver)
-        lp.enter_user_name()
+        lp.enter_user_name(Data.USERNAME)
         time.sleep(1)
-        lp.enter_password()
+        lp.enter_password(Data.PASSWORD)
         time.sleep(1)
         lp.click_on_submit_button()
         time.sleep(2)
