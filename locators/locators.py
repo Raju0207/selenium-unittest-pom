@@ -8,3 +8,9 @@ class Locators:
     swagLabsText = By.XPATH, '//div[@class ="app_logo"]'
     burgerMenu = By.ID, 'react-burger-menu-btn'
     logoutButton = By.ID, 'logout_sidebar_link'
+    userName1 = (By.ID, 'user-name')
+    password1 = (By.ID, 'password')
+    TextMessage = By.XPATH, '//h3'
+    userName2 = (By.ID, 'user-name')
+    password2 = (By.ID, 'password')
+
